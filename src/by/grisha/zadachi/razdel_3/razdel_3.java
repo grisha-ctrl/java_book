@@ -1,9 +1,8 @@
-package cheting;
+package by.grisha.zadachi.razdel_3;
 
 import java.util.Scanner;
 
-public class dan {
-
+public class razdel_3 {
     public static Scanner in=new Scanner(System.in);
     public static void main (String[] args) {
 
@@ -39,9 +38,9 @@ public class dan {
         System.out.println("Введите число :");
         int a = in.nextInt();
         int b=0, c=0, e=0;
-            b = a+2;
-            c = b+2;
-            e = c+2;
+        b = a+2;
+        c = b+2;
+        e = c+2;
         System.out.println(b + "\t" + c + "\t" + e);
 
         //3.7
