@@ -2,9 +2,13 @@ package by.grisha.zadachi.razdel_2;
 
 import java.util.Scanner;
 
+/**
+ * Дели задачки на методы потом буду смотреть
+ */
+
 public class razdel_2 {
         static Scanner in = new Scanner(System.in);
-        public  static void main(String[] args) {
+        public static void main(String[] args) {
 //            //2.1
 //            System.out.println("Hello, world!");
 //
