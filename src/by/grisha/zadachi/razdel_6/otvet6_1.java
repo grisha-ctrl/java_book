@@ -6,18 +6,26 @@ public class otvet6_1 {
 
     public static void main(String[] args)
     {
-
+        o6_11();
     }
 
+    /**
+     * Зачем в метод передаешь аргументом массив, если не используешь его внутри метода?
+     * @param str
+     */
     public static void o6_6(String[] str){
         int x = in.nextInt();
         if (x<0) System.out.println("Отрицатетльное");
         if (x>0) System.out.println("Положительное");
         if (x==0) System.out.println("Ноль");
     }
-    public static void o6_7(String[] str) {
+    public static void o6_7() {
         int x = in.nextInt();
-        if (x>99) x-=1;
+        //Можно написать вот так
+//        if (x>99) x-=1;
+        if(x > 99) {
+            x--;
+        }
         System.out.println(x);
     }
     public static void o6_8(String[] str) {
@@ -48,10 +56,12 @@ public class otvet6_1 {
         int x = in.nextInt();
         int y = in.nextInt();
         if (x==0 || y==0) System.out.println("Некорректно");
+        //Фатальная ошибка, ты попутал & и &&. Гугли разницу. Оно то работает, но так нельзя делать.
         else if ((x>0 & y>0)||(x<0 & y<0)) System.out.println("Один и тотже знак");
         else System.out.println("Знаки разные");
     }
     public static void o6_12(){
+        //Харэ писать переменные в строку
         int a,b,c,d;
         a=in.nextInt();
         b=in. nextInt();
@@ -62,8 +72,8 @@ public class otvet6_1 {
     }
     public static void o6_14(){
         int x,y;
-        x=in. nextInt();
-        y=in. nextInt();
+        x=in.nextInt();
+        y=in.nextInt();
         if (x*y>0)
             System.out.println("Положительная");
         else System.out.println("Отрицательная");

@@ -22,6 +22,8 @@ public class razdel_7 {
     public void o7_8(){
         int x = in.nextInt();
         int y = in.nextInt();
+        //Вот тут и проблема. Хер пойми где ученики, а где столы, если х это столы, то норм, если наоборот, то надо делить
+        //Пиши осознанные имена переменных
         if (x*2>=y) System.out.println("Da");
         else System.out.println("Net");
     }

@@ -11,6 +11,7 @@ public class razdel_4 {
 
     //4.2
     int y = in.nextInt();
+    //Странный код стайл, не надо съезжать) Делай отдельными методами
         System.out.println(y / 100 + " " + (y-100*(y/100)) / 10+" "+y%10);
 
     //4.3
@@ -70,7 +71,7 @@ public class razdel_4 {
     int counter = 0;
     int num5 = (x4 / 10);
     int num6 = (x4 % 10);
-        if (num5%2 == 0) counter++;
+        if (num5%2 == 0) counter++;//Я не люблю такую запись, используй скобки фигурные, улучшает читабельность
         if (num6%2 == 0) counter++;
         System.out.println(counter);
 
